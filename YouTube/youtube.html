@@ -109,7 +109,7 @@
             justify-content: space-between;
             width: 150px;
             align-items: center;
-            margin-right: 20px;
+            margin-right: 50px;
             flex-shrink: 0;
         }
         .line-icon{
@@ -176,6 +176,28 @@
             right: -2px;
             font-size: 11px;
         }
+        .middle-section button .tooltip{
+            position: absolute;
+            bottom: -12px;
+            font-size: 10px;
+            left: 0px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .middle-section button:hover .tooltip{
+            opacity: 1;
+        }
+        .right-section button .tooltip{
+            position: absolute;
+            bottom: -12px;
+            font-size: 10px;
+            left: -3px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .right-section button:hover .tooltip{
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -194,23 +216,32 @@
             <div class="search-division">
                 <input class="Search-Bar" type="text" placeholder="Search">
             </div>
-            <button style = "margin-left:8px;margin-right:1px;">
+            <button style = "
+                margin-left:10px;
+                margin-right:5px;
+                position: relative;
+            ">
                 <image class = "search-button" src = "Icons/search.svg">
+                <div class = "tooltip"><p>Search</p></div>
             </button>
-            <button>
+            <button style = "position: relative">
                 <image class = "voice-search" src = "Icons/voice-search-icon.svg">
+                <div class = "tooltip" style = "width: 100px;"><p>Search with your voice</p></div>
             </button>
         </div>
         <div class="right-section">
-            <button>
+            <button style = "position: relative">
                 <image class = "upload-icon" src = "Icons/upload.svg">
+                <div class = "tooltip"><p>Create</p></div>
             </button>
-            <button>
+            <button style = "position: relative;">
                 <image class = "youtube-app-icon" src = "Icons/youtube-apps.svg">
+                <div class = "tooltip" style = "width: 80px;"><p>YouTube Apps</p></div>
             </button>
-            <button class = "notification-button">
+            <button class = "notification-button" style = "position: relative">
                 <image class = "notifications-icon" src = "Icons/notifications.svg">
                 <div class = "notification-count">3</div>
+                <div class = "tooltip"><p>Notifications</p></div>
             </button>
         </div>
     </div>
