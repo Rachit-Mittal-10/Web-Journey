@@ -1,0 +1,242 @@
+p {
+    font-family: Georgia;
+    margin: 0px;
+}
+
+body {
+    padding: 50px;
+    padding-left: 100px;
+    background-color: rgb(237, 237, 237);
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.Search-Bar {
+    font-size: 12px;
+    font-family: Georgia;
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border-style: dotted;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.Search-Bar:active {
+    border-style: solid;
+}
+
+.video-title {
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.video-author,
+.video-stats {
+    width: 100%;
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+}
+
+.search-division {
+    width: 70%;
+}
+
+.horizontal {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 0px;
+}
+
+.vertical {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.channel-photo {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+@media(max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1200px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(237, 237, 237);
+}
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-section {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 30px;
+    flex: 1;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+    align-items: center;
+    margin-right: 50px;
+    flex-shrink: 0;
+}
+
+.line-icon {
+    margin-left: 10px;
+    height: 25px;
+    width: 15%;
+    display: inline-block;
+}
+
+.youtube-logo {
+    margin-right: 10px;
+    width: 60%;
+    display: inline-block;
+    height: 25px;
+}
+
+.upload-icon,
+.youtube-app-icon,
+.search-button,
+.notifications-icon,
+.voice-search {
+    width: 24px;
+    height: 24px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: rgb(242, 239, 239);
+}
+
+button:active {
+    background-color: rgb(209, 209, 209);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    bottom: 0px;
+    width: 55px;
+    padding: 10px;
+    padding-bottom: 150px;
+    background-color: white;
+}
+
+.home-icon,
+.explore-icon,
+.subscription-icon,
+.originals-icons,
+.yt-music-icon,
+.library-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.notification-button {
+    position: relative;
+}
+
+.notification-count {
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 50%;
+    top: -2px;
+    right: -2px;
+    font-size: 11px;
+}
+
+.middle-section button .tooltip {
+    position: absolute;
+    bottom: -12px;
+    font-size: 10px;
+    left: 0px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.middle-section button:hover .tooltip {
+    opacity: 1;
+}
+
+.right-section button .tooltip {
+    position: absolute;
+    bottom: -12px;
+    font-size: 10px;
+    left: 0px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.right-section button:hover .tooltip {
+    opacity: 1;
+}
+
+.middle-section button .right-section button {
+    display: flex;
+    justify-content: center;
+}
