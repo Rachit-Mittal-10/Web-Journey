@@ -1,0 +1,19 @@
+p{
+    background-color: pink;
+    font-size: 24px;
+}
+
+.class{
+    font-size: 30px;
+}
+
+#id-1{
+    color: blue;
+    font-size: 28px;
+}
+
+#id-2{
+    background-color: lightcyan;
+    font-weight: 900;
+    font-size: 30px;
+}
