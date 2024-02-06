@@ -1,5 +1,5 @@
 .title{
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
     font-weight: bold;
 }
@@ -11,10 +11,8 @@
 }
 
 img{
-    width: 50%;
+    width: 100px;
     height: auto;
-    margin: 0px;
-    padding: 0px 0px 0px 28px;
 }
 
 div{
@@ -22,5 +20,5 @@ div{
 }
 
 .photo-text{
-    width: 200px;
+    max-width: 200px;
 }
