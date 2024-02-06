@@ -1,0 +1,16 @@
+.container{
+    background-color: rgb(37, 37, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+}
+.box{
+    background-color: rgb(246, 37, 37);
+    border: solid 5px rgb(126, 1, 1);
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-weight: 1000;
+}
