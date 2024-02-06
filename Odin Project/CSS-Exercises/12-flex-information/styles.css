@@ -1,0 +1,26 @@
+.title{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 52px;
+    margin: 32px 8px 32px 8px
+}
+
+img{
+    width: 50%;
+    height: auto;
+    margin: 0px;
+    padding: 0px 0px 0px 28px;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.photo-text{
+    width: 200px;
+}
