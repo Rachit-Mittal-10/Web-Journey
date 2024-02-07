@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+    font-family: Georgia, serif;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: purple;
+    color: white;
+    font-weight: 900px;
+    font-size: 32px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.footer{
+    background-color: lightgray;
+    color: purple;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.mid-section{
+    display: flex;
+    height: 100%;
+}
+
+.sidebar{
+    background-color: rgb(46, 117, 248);
+    width: 20%;
+}
+
+.content{
+    display: flex;
+    gap: 16px;
+    flex-wrap:wrap;
+    padding: 20px;
+}
+
+.card{
+    border: solid rgba(0,0,0,0.05) 1px;
+    box-shadow: 2px;
+    width: 300px;
+    min-height: 250px;
+}
