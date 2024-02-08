@@ -4,6 +4,7 @@ body{
     padding: 0px;
     display: flex;
     flex-direction: column;
+    font-family: Georgia, "Times New Roman", serif;
 }
 p{
     padding: 0px;
@@ -17,37 +18,178 @@ ul{
     display: inline-block;
 }
 
+div{
+    box-sizing: border-box;
+}
+
 #header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 10px 80px 30px 80px;
+}
+
+#header .logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#header .links{
+    display: flex;
+    gap: 18px;
+    font-size: 18px;
 }
 
 #section1{
     display: flex;
+    background-color: #1F2937;
+    color: white;
+    padding: 30px 120px 60px 120px;
+    gap: 20px;
 }
+
+#section1 .left{
+    width:60%;
+}
+
+#section1 .left #line1{
+    font-size: 36px;
+    padding-bottom: 8px;
+}
+
+#section1 .left #line2{
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+#section1 .left button{
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px 4px 15px;
+    background-color: rgb(46, 101, 184);
+    color: white;
+    font-weight: bold;
+}
+
+#section1 .right{
+    width: 40%;
+}
+
+#section1 .right .placeholder{
+    display: flex;
+    background-color: rgb(161, 161, 161);
+    height: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
 #section2{
     display: flex;
     flex-direction: column;
 }
 
-#section3{
-    display: flex;
-    flex-direction: column;;
+#section2 #text{
+    text-align: center;
+    font-weight: 1000;
+    padding: 20px 0px;
+    font-size: 24px;
 }
 
-.box{
+#section2 .card-container{
     display: flex;
-}
-
-.links{
-    display: flex;
-    gap: 8px;
-}
-
-.card-container{
-    display: flex;
-    width: 100px;
     gap: 8px;
     justify-content: center;
+    padding: 0px 400px 50px 400px;
+}
+
+#section2 .card-container .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section2 .card-container .card div{
+    width: 100px;
+    height: 100px;
+    border: solid rgb(83, 129, 219) 2px;
+    border-radius: 5px;
+}
+
+#section2 .card-container .card p{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 16px 16px 10px;
+}
+
+#section3{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: 50px 200px;
+}
+
+#section3 .quote{
+    font-size: 24px;
+    font-style: oblique;
+}
+
+#section3 .by-line{
+    font-size: 16px;
+    font-weight: 550;
+    text-align: right;
+}
+
+#section4{
+    padding: 100px 200px;
+}
+
+#section4 .box{
+    background-color: rgb(46, 101, 184);
+    padding: 30px 50px;
+    border-radius: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+#section4 .box .left{
+    width: 80%;
+    color: white;
+}
+
+#section4 .box .left #line1{
+    font-weight: 600px;
+    font-size: 20px; 
+}
+
+#section4 .box .left #line2{
+    font-size: 16px;
+}
+
+#section4 .box .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4 .box .right button{
+    border: solid white 2px;
+    background-color: rgb(46, 101, 184);
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#footer{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 15px;
 }
