@@ -1,0 +1,59 @@
+p {
+    width: 550px;
+    font-family: Georgia;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: left;
+    line-height: 40px;
+}
+
+.by-line {
+    font-size: 15px;
+    font-weight: italic;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.Name-field {
+    font-size: 15px;
+}
+
+.shop-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgb(230, 64, 65);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.shop-now-text {
+    margin-left: 5px;
+    font-style: Italic;
+    transition: color 1s;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.shop-now-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}

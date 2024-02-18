@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>FLEXBOX</title>
+    <style>
+        p{
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style = "
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+        
+    ">
+        <div style = "background-color:lightblue">div1 test</div>
+        <div style = "background-color: lightpink">div2 <p>HT</p></div>
+    </div>
+    <div style = "
+        display: flex;
+        margin-top: 30px;
+        flex-direction: row;
+        column-gap: 15px;
+    ">
+        <div style = "background-color:lightblue; width: 100px">div1 test</div>
+        <div style = "background-color: lightpink; flex: 1">div2 <p>HT</p></div>
+        <div style = "background-color:lightblue; flex: 2">div1 test</div>
+    </div>
+</body>
+
+
+</html>
